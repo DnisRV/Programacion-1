@@ -97,7 +97,7 @@ public class Juego {
         
         mat[px][py].setIcon(new ImageIcon("imagenes/"+matriz[px][py]+".jpg"));
         
-        if(px<9 && matriz[px][py]==color)
+        if(px<9 && matriz[px+1][py]==color)
             recursiva(px+1, py, color);
         if (px>0 && matriz[px-1][py]==color) 
             recursiva(px-1, py, color);
